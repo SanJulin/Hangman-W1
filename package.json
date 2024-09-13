@@ -1,16 +1,22 @@
 {
-  "name": "hangman-w1",
+  "name": "workshop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Workshop 1 - Koda med andra",
+  "type": "module",
+  "browser": "src/js/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Sandra Julin",
   "license": "ISC",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.10"
+  },
   "dependencies": {
-    "redline": "^1.0.1"
+    "vite": "^5.4.2"
   }
 }
